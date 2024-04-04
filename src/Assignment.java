@@ -83,5 +83,6 @@ public class Assignment {
             System.out.print("Do you want to continue again? (Enter 'y' to continue, or any other key to quit): ");
         } while ( scanner.next().equalsIgnoreCase("y"));
         System.out.println("Exiting ...");
+        scanner.close();
     }
 }
