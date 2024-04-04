@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Assignment {
     // Program to print 1 to 100
     public static void PrintNum(){
@@ -52,12 +51,12 @@ public class Assignment {
     }
     // table of a give number in specific format e.g. 5 * 1 = 5
     public static void Table(){
-        int i, sum =1 ;
+        int i;
         System.out.print("Enter any num to print its table : ");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         for (i =1; i<= 10; i++){
-            System.out.println(num +" * "+ i + " = " + num * i ); ;
+            System.out.println(num +" * "+ i + " = " + num * i );
         }
     }
     public static void main(String[] args) {
@@ -80,7 +79,7 @@ public class Assignment {
             case 6 -> Table();
             default -> System.out.println("Invalid selection");
         }
-            System.out.print("Do you want to continue again? (Enter 'y' to continue, or any other key to quit): ");
+            System.out.print("Do you want to continue with another program ? (Enter 'y' to continue, or any other key to quit): ");
         } while ( scanner.next().equalsIgnoreCase("y"));
         System.out.println("Exiting ...");
         scanner.close();
