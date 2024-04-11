@@ -15,6 +15,6 @@ public class TempConverter {
     }
     public static void main(String[] args) {
         System.out.println("Temperature in Fahrenheit is " +  Converter.convertTemp(25));
-        System.out.printf("Temperature in Kelvin is  " +  Converter.convertTemp(25, true));
+        System.out.printf("Temperature in Kelvin is  " +  Converter.convertTemp(25, false));
     }
 }

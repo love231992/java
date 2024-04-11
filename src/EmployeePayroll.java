@@ -29,7 +29,7 @@ public class EmployeePayroll {
                 "Name='" + empName + '\'' +
                 ", Id=" + empId +
                 ", Designation='" + designation + '\'' +
-                ", Salary=" + salary +
+                ", Basic Salary=$" + salary +
                 '}';
     }
 
@@ -39,6 +39,8 @@ public class EmployeePayroll {
         System.out.println("Gross salary is $" + emp.grossSalary());
         System.out.println("Net salary is $" + emp.netSalary());
         System.out.println("Deduction is $" + emp.deduction());
+
+
     }
 
 }
