@@ -1,7 +1,6 @@
 import java.util.Scanner;
 // Create a program that takes a character as input and determines if it's a vowel or a consonant.
 public class Vowels {
-
     public static void main(String[] args)
     {
         System.out.print("Please enter a character : ");
@@ -15,7 +14,6 @@ public class Vowels {
             System.out.println("The first character " + word + " is a vowel.");
         } else
         System.out.println("The first character " + word + " is a consonant.");
-
     }
 }
 
