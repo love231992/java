@@ -18,8 +18,6 @@ public class LongestSubstring {
             maxLength = Math.max(maxLength, i - start + 1);
             arr[currentChar] = i + 1;
         }
-
         System.out.println(maxLength);
-
     }
 }

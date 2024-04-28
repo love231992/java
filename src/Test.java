@@ -1,14 +1,35 @@
-/* File name : VirtualDemo.java */
+//interface Food {
+//    void eat();
+//}
 
-import java.util.Arrays;
+interface IndianCuisine {
+    public void eat();
+}
 
+interface ChineseCuisine  {
+    public void eat() ;
+}
+
+class IndoChinese implements ChineseCuisine, IndianCuisine {
+
+    @Override
+    public void eat() {
+        System.out.println("Go out for Indian cuisine Dining");
+    }
+
+
+//    public void eat() {
+//        System.out.println("Go out for Chinese cuisine dining");
+//    }
+}
 public class Test {
-    public static void main(String[] arguments) {
-//        Date date = Date.from(Instant.now());
-//        System.out.println(date.compareTo());
 
-     String s = "love";
-        System.out.println(s);
+    public static void main(String[] args)  {
+      IndianCuisine food = new IndoChinese();
+      food.eat();
+
+    }
+}
 
 
 // ****************                         Reverse the string            *****************************************
@@ -24,12 +45,12 @@ public class Test {
 
         // **********************               Reverse an array            *********************
 
-        int[] arr = {1,2,3,4,5,6};
-        int[] arr2 = new int[6];
-        for (int i = 0; i < arr.length ; i++) {
-             arr2[i] = arr[(arr.length-i)-1];
-        }
-        System.out.println(Arrays.toString(arr2));
+//        int[] arr = {1,2,3,4,5,6};
+//        int[] arr2 = new int[6];
+//        for (int i = 0; i < arr.length ; i++) {
+//             arr2[i] = arr[(arr.length-i)-1];
+//        }
+//        System.out.println(Arrays.toString(arr2));
 // ****************************************************************************************************************
         // **********************               Sort an array            *********************
 //        int[] array = {12,23,44,12,11,34};
@@ -74,4 +95,3 @@ public class Test {
 
 
 
-} }
