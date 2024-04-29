@@ -5,10 +5,10 @@ public class Vowels {
     {
         System.out.print("Please enter a character : ");
         Scanner scanner = new Scanner(System.in);
-        char word = scanner.next().charAt(0);
+        char word = scanner.next().toLowerCase().charAt(0);
         while (Character.isDigit(word)){
             System.out.print("Please enter alpha character instead of numeric digits : ");
-            word = scanner.next().charAt(0);
+            word = scanner.next().toLowerCase().charAt(0);
         }
          if ( word == 'a' || word == 'e' || word == 'i' || word == 'o' || word == 'u'){
             System.out.println("The first character " + word + " is a vowel.");
